@@ -1,0 +1,34 @@
+CREATE TABLE Produtos (
+    ProdutoID INT AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL,
+    Categoria VARCHAR(50),
+    Preco DECIMAL(10,2) NOT NULL,
+    Estoque INT NOT NULL
+);
+
+CREATE TABLE Clientes (
+    ClienteID INT AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL,
+    Telefone VARCHAR(20),
+    Email VARCHAR(100)
+);
+
+CREATE TABLE Pedidos (
+    PedidoID INT AUTO_INCREMENT PRIMARY KEY,
+    ClienteID INT,
+    DataPedido DATETIME DEFAULT CURRENT_TIMESTAMP,
+    ValorTotal DECIMAL(10,2),
+
+    FOREIGN KEY (ClienteID) REFERENCES Clientes(ClienteID)
+);
+
+CREATE TABLE ItensPedido (
+    ItemID INT AUTO_INCREMENT PRIMARY KEY,
+    PedidoID INT NOT NULL,
+    ProdutoID INT NOT NULL,
+    Quantidade INT NOT NULL,
+    Subtotal DECIMAL(10,2) NOT NULL,
+
+    FOREIGN KEY (PedidoID) REFERENCES Pedidos(PedidoID),
+    FOREIGN KEY (ProdutoID) REFERENCES Produtos(ProdutoID)
+);
