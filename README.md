@@ -22,9 +22,9 @@ Cada tabela foi definida utilizando comandos **DDL**, e posteriormente algumas d
 É com DDL que criamos, alteramos ou excluímos tabelas e bancos.
 
 ### **Principais comandos DDL**
-- `CREATE` → cria bancos e tabelas  
-- `ALTER` → altera uma tabela existente  
-- `DROP` → exclui uma tabela ou banco
+- **CREATE** → cria bancos e tabelas  
+- **ALTER** → altera uma tabela existente  
+- **DROP** → exclui uma tabela ou banco
 
 #### Exemplos de DDL usados no projeto:
 
