@@ -72,19 +72,16 @@ Eles permitem inserir, consultar, atualizar e apagar registros.
 - **UPDATE** → Atualiza registros  
 - **DELETE** → Remove registros  
 
-Todos esses comandos foram utilizados nas tabelas criadas no projeto:  
-**Produtos**, **Clientes** e **Pedidos**.
 
-#### Exemplos de Insert na tabela **Produtos**:
+#### Exemplos:
 
-
+1- Insert na tabela **Produtos**
 ```sql
 INSERT INTO Produtos (Nome, Categoria, Preco, Estoque)
-VALUES ('Café Expresso', 'Bebida', 5.00, 30);
-
-INSERT INTO Produtos (Nome, Categoria, Preco, Estoque)
-VALUES ('Cappuccino', 'Bebida', 8.50, 20);
-
-INSERT INTO Produtos (Nome, Categoria, Preco, Estoque)
-VALUES ('Pão de Queijo', 'Salgado', 4.00, 50);
+VALUES
+('Café Expresso', 'Bebidas', 7.50, 100),
+('Cappuccino', 'Bebidas', 12.00, 50),
+('Pão de Queijo', 'Salgados', 6.00, 80);
 ```
+
+2- Insert na tabela Clientes
