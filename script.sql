@@ -40,3 +40,7 @@ VALUES
 ('Café Expresso', 'Bebidas', 7.50, 100),
 ('Cappuccino', 'Bebidas', 12.00, 50),
 ('Pão de Queijo', 'Salgados', 6.00, 80);
+
+INSERT INTO Clientes (Nome, Telefone, Email)
+VALUES
+('Sebastião da silva', '+55 (11) 98765-4321', 'sebastiao@gmail.com');
