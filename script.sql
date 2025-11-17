@@ -1,4 +1,6 @@
-CREATE TABLE Produtos (
+CREATE DATABASE Cafeteria;
+
+USE Cafeteria;CREATE TABLE Produtos (
     ProdutoID INT AUTO_INCREMENT PRIMARY KEY,
     Nome VARCHAR(100) NOT NULL,
     Categoria VARCHAR(50),
@@ -32,3 +34,9 @@ CREATE TABLE ItensPedido (
     FOREIGN KEY (PedidoID) REFERENCES Pedidos(PedidoID),
     FOREIGN KEY (ProdutoID) REFERENCES Produtos(ProdutoID)
 );
+
+INSERT INTO Produtos (Nome, Categoria, Preco, Estoque)
+VALUES
+('Café Expresso', 'Bebidas', 7.50, 100),
+('Cappuccino', 'Bebidas', 12.00, 50),
+('Pão de Queijo', 'Salgados', 6.00, 80);
