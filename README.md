@@ -13,7 +13,7 @@ O banco foi criado para representar uma **cafeteria**, contendo tabelas como:
 - Clientes  
 - Pedidos
 
-Cada tabela foi definida utilizando comandos **DDL**, e posteriormente preenchida com exemplos de **DML**.
+Cada tabela foi definida utilizando comandos **DDL**, e posteriormente algumas delas foram preenchida com exemplos de **DML**.
 
 ---
 ## DDL
@@ -68,12 +68,12 @@ Eles permitem inserir, consultar, atualizar e apagar registros.
 ### Principais Comandos DML
 
 - **INSERT** → Insere novos dados  
-- **SELECT** → Consulta dados já existentes  
+- **SELECT** → Consulta dados ou edita dados já existentes
 - **UPDATE** → Atualiza registros  
 - **DELETE** → Remove registros  
 
 
-#### Exemplos:
+#### Exemplos de DML usados no projeto:
 
 1- Insert na tabela **Produtos**
 ```sql
@@ -84,4 +84,15 @@ VALUES
 ('Pão de Queijo', 'Salgados', 6.00, 80);
 ```
 
-2- Insert na tabela Clientes
+2- Insert na tabela **Clientes**
+```sql
+INSERT INTO Clientes (Nome, Telefone, Email)
+VALUES
+('Sebastião da silva', '+55 (11) 98765-4321', 'sebastiao@gmail.com');
+```
+
+3- Select na tabela **Produtos**
+```sql
+SELECT * FROM PRODUTOS;
+```
+---
